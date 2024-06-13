@@ -1,0 +1,249 @@
+html {
+    width: auto;
+    background-color: #000000;
+}
+
+body {
+    width: 485px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-size: 1.25em;
+    padding: 15px;
+    margin: 0;
+}
+
+figcaption, label, input, small {
+    font-size: 1em;
+}
+
+nav {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+nav ul {
+    padding-top: 40px;
+    height: 70px;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+nav a {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+    
+}
+
+[href="#top"] {
+    position: fixed;
+    background-color: #000000;
+    bottom: 0px;
+    right: 0px;
+    border: 3px solid #ffffff;
+    padding: 5px;
+}
+
+h1 {
+    font-size: 3em;
+    color: #007d7b;
+    margin-bottom: -5px;
+    text-transform: uppercase;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+h2 {
+    margin: 0;
+    font-size: 2em;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+
+#about {
+    margin-bottom: 10px;
+}
+
+#gallery {
+    margin-top: 10px;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: repeat(12, auto);
+}
+
+figure {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-left: 32px;
+}
+figcaption {
+    position: absolute;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#iran, #ireland, #rocky, #switzerland, #uk, #usa {
+    color: #000000;
+    top: 15px;
+}
+
+#italy {
+    color: #000000;
+    bottom: 10px;
+}
+
+#chile, #hawaii, #moab {
+    color: #ffffff;
+    bottom: 10px;
+}
+
+#guatemala, #wyoming {
+    color: #ffffff;
+    top: 10px;
+}
+
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+footer p:last-child {
+    margin-bottom: 5px;
+    margin-top: 50px;
+    text-transform: uppercase;
+}
+input {
+    width: 270px;
+    padding: 5px 120px 5px 8px;
+    margin-bottom: 25px;
+    color: #007d7b;
+    font-weight: bold;
+}
+
+#contact {
+    padding-top: 13px;
+}
+label {
+    display: flex;
+    margin-left: 48px;
+    margin-bottom: -18px;
+    text-transform: uppercase;
+}
+#submit {
+    text-transform: uppercase;
+    width: 240px;
+    font-weight: bold;
+    background-color: #007d7b;
+    color: #ffffff;
+    border-radius: .8em;
+    border-style: none;
+    padding: 10px 0px 10px 0px;
+}
+
+::placeholder {
+    color: #007d7b;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+@media screen and (min-width:880px) {
+    body {
+        width: 880px;
+    }
+    nav ul {
+        justify-content: center;
+    }
+    nav a {
+        padding-right: 20px;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 430px);
+        grid-template-rows: auto;
+        padding-left: 10px;
+        
+    }
+    figure {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 0;
+    }
+    img {
+        width: 415px;
+    }
+    .hawaii {
+        height: 281px;
+    }
+    #hawaii {
+        bottom: 350px;
+    }
+    label {
+        margin-left: 133px;
+    }
+    input {
+        width: 500px;
+        padding: 5px 120px 5px 8px;
+        margin-bottom: 25px;
+    }
+    #submit {
+        width: 350px;
+        padding: 8px 100px 8px 100px;
+    }
+}
+
+@media screen and (min-width:1300px) {
+    body {
+        width: 1300px;
+    }
+    nav ul {
+        justify-content: right;
+    }
+    nav a {
+        padding-right: 20px;
+    }
+    #hawaii {
+        bottom: 10px;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 430px);
+        grid-template-rows: auto;
+        padding-left: 5px;
+    }
+    figure {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 0px;
+    }
+    img {
+        width: 415px;
+    }
+    label{
+        margin-left: 144px;
+    }
+    input {
+        width: 900px;
+        padding: 5px 120px 5px 8px;
+        margin-bottom: 25px;
+    }
+    #submit {
+        width: 600px;
+        padding: 8px 100px 8px 100px;
+    }
+}
